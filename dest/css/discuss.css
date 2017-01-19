@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 1.186667rem;
+  background-color: #f5f6f7;
+  text-align: center;
+  line-height: 1.2rem;
+  border-bottom: 1px solid #CACACA;
+  /*border-bottom: 1px solid red;/!*no*!/*/
+}
+
+.header span {
+  display: block;
+  height: 100%;
+  width: 6.8rem;
+  margin: auto;
+  font-size: 0.48rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header i {
+  float: left;
+  display: inline-block;
+  height: 0.333333rem;
+  width: 0.333333rem;
+  border-right: 0;
+  border-bottom: 0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  /* Safari 和 Chrome */
+  margin-left: 0.426667rem;
+  margin-top: 0.426667rem;
+}
+
+[data-dpr="1"] .header i {
+  border-left: solid 1.5px #333333;
+  border-top: solid 1.5px #333333;
+}
+
+[data-dpr="2"] .header i {
+  border-left: solid 3px #333333;
+  border-top: solid 3px #333333;
+}
+
+[data-dpr="3"] .header i {
+  border-left: solid 4.5px #333333;
+  border-top: solid 4.5px #333333;
+}
+
+.header .close {
+  position: absolute;
+  right: 0.533333rem;
+  top: 0.133333rem;
+  display: none;
+  width: 0.946667rem;
+  height: 0.946667rem;
+  border-radius: 0.946667rem;
+  line-height: 0.946667rem;
+  background-color: #f5f6f7;
+  font-size: 1.013333rem;
+  font-weight: normal;
+}
+
+.content_sec {
+  position: fixed;
+  width: 100%;
+  top: 1.2rem;
+  bottom: 1.36rem;
+  overflow-y: scroll;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+  font-weight: bold;
+  line-height: 1.0;
+}
+
+.content {
+  width: 7.733333rem;
+  margin: 0.36rem auto 0 auto;
+}
+
+.content>div {
+  display: inline-block;
+}
+
+/*.content>div:first-child{
+    margin-right: 19px;
+    vertical-align: top;
+}*/
+
+.content>div:nth-of-type(2) {
+  width: 6.533333rem;
+}
+
+.content .touxiang {
+  margin-right: 0.253333rem;
+  vertical-align: top;
+  width: 0.853333rem;
+  height: 0.853333rem;
+  border-radius: 0.853333rem;
+  overflow: hidden;
+}
+
+.content .touxiang img {
+  width: 0.853333rem;
+  height: 0.853333rem;
+}
+
+.content .name {
+  display: inline-block;
+  width: 4.066667rem;
+  color: #406599;
+  font-size: 0.32rem;
+  line-height: 0.853333rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content .time {
+  float: right;
+  color: #929ba8;
+  font-size: 0.32rem;
+  line-height: 0.853333rem;
+}
+
+.content .dimension {
+  margin-top: 0.133333rem;
+  margin-bottom: 0.36rem;
+  /* display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;*/
+  font-size: 0.373333rem;
+  line-height: 0.453333rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0.266667rem 0;
+  background-color: #f5f6f7;
+  text-align: center;
+}
+
+footer>div {
+  display: inline-block;
+  font-size: 0.32rem;
+  color: #9f9f9f;
+  background-color: white;
+  width: 90%;
+  height: 0.8rem;
+  padding-left: 0.4rem;
+  border: 1px solid #eee;
+  border-radius: 0.4rem;
+  line-height: 0.8rem;
+  margin: auto auto;
+  text-align: left;
+}
+
+#lay {
+  position: fixed;
+  top: 1.2rem;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+}
+
+.lay {
+  width: 100%;
+  text-align: center;
+  background-color: #f5f6f7;
+  overflow: hidden;
+}
+
+.lay>textarea {
+  display: block;
+  width: 87.5%;
+  height: 1.853333rem;
+  margin: 0.28rem auto;
+  padding: 0.266667rem;
+  border-radius: 0.16rem;
+  font-size: 0.32rem;
+}
+
+[data-dpr="1"] .lay>textarea {
+  border: 1.5px solid #eee;
+}
+
+[data-dpr="2"] .lay>textarea {
+  border: 3px solid #eee;
+}
+
+[data-dpr="3"] .lay>textarea {
+  border: 4.5px solid #eee;
+}
+
+.lay .point {
+  display: inline-block;
+  color: #9f9f9f;
+  margin-left: 0.333333rem;
+  font-size: 0.266667rem;
+}
+
+.lay>.deliver {
+  margin-right: 0.333333rem;
+  margin-bottom: 0.28rem;
+  border-radius: 0.16rem;
+  width: 1.493333rem;
+  height: 0.706667rem;
+  color: white;
+  /*background-color: #CACACA;*/
+  background-color: #406599;
+  line-height: 0.706667rem;
+  text-align: center;
+  font-size: 0.4rem;
+}

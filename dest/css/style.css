@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+.header {
+  width: auto;
+  /*px*/
+  background: #f8f8f8;
+  border: #ededed solid 0.013333rem;
+  border-left: 0;
+  border-right: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+[data-dpr="1"] .header {
+  height: 35px;
+  font-size: 16px;
+}
+
+[data-dpr="2"] .header {
+  height: 70px;
+  font-size: 32px;
+}
+
+[data-dpr="3"] .header {
+  height: 105px;
+  font-size: 48px;
+}
+
+.header a {
+  display: inline-block;
+  height: 100%;
+  line-height: 2;
+  padding: 0 0.333333rem;
+  margin: 0;
+  color: #666666;
+  font-weight: normal;
+}
+
+.header a.on {
+  color: #3095ee;
+}
+
+.news-item {
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  border-bottom: red solid 0.013333rem;
+}
+
+.wrap {
+  margin-top: 0.533333rem;
+}
+
+.list {
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 0.4rem;
+  padding: 0.266667rem 0;
+}
+
+.news-item {
+  padding: 0.133333rem 0;
+}
+
+.news-item .infos {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.news-item .infos h1 {
+  font-size: 0.426667rem;
+  color: #000;
+  line-height: 1.2;
+  padding: 0.133333rem 0;
+  font-weight: normal;
+}
+
+.list_image {
+  display: -moz-box;
+  /* Firefox */
+  display: -webkit-box;
+  /* Safari and Chrome */
+  display: flex;
+  width: 100%;
+}
+
+.desc {
+  font-size: 0.266667rem;
+  color: #c3c3c3;
+  font-weight: normal;
+}
+
+.list_image .list_img_holder {
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 0.5%;
+  -moz-box-flex: 1;
+  /* Firefox */
+  -webkit-box-flex: 1;
+  /* Safari and Chrome */
+  box-flex: 1;
+  background: #f3f3f3;
+}
+
+.list_image .list_img_holder img {
+  width: 100%;
+  height: auto;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c1 .desc {
+  position: absolute;
+  bottom: 0.266667rem;
+  left: 0;
+  right: 0;
+}
+
+.c1 .list_image {
+  margin-bottom: 0.666667rem;
+}
+
+.c2 .infos {
+  float: left;
+  width: 67%;
+  margin-bottom: 0.133333rem;
+}
+
+.c2 .list_image {
+  width: 33%;
+  padding: 0.133333rem 0;
+}
+
+.h1 {
+  height: 1.333333rem;
+  width: 100%;
+}

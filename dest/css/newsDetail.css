@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 999;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+.footer {
+  width: 100%;
+  height: 1.2rem;
+  background: #f5f6f8;
+  position: fixed;
+  bottom: 0;
+  /*display: none;*/
+}
+
+[data-dpr="1"] .footer {
+  border-bottom: #eee solid 0.5px;
+}
+
+[data-dpr="2"] .footer {
+  border-bottom: #eee solid 1px;
+}
+
+[data-dpr="3"] .footer {
+  border-bottom: #eee solid 1.5px;
+}
+
+.footer button {
+  height: 100%;
+  width: 1.333333rem;
+  font-size: 0.466667rem;
+  background: #f5f6f7;
+  border: 0;
+}
+
+.footer button i {
+  display: inline-block;
+  height: 0.266667rem;
+  width: 0.266667rem;
+  border: solid 0.04rem #333333;
+  border-right: 0;
+  border-bottom: 0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  /* Safari 和 Chrome */
+  margin-left: 0.4rem;
+  margin-top: 0.133333rem;
+}
+
+.footer button span {
+  font-weight: bold;
+}
+
+[data-dpr="1"] .footer button span {
+  letter-spacing: 2.5px;
+}
+
+[data-dpr="2"] .footer button span {
+  letter-spacing: 5px;
+}
+
+[data-dpr="3"] .footer button span {
+  letter-spacing: 7.5px;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+  font-weight: bold;
+  line-height: 1.0;
+}
+
+.content {
+  width: auto;
+  height: auto;
+  overflow: auto;
+  margin: 0.266667rem 0.4rem;
+  margin-top: 0.133333rem;
+  z-index: 9999;
+}
+
+.news-info {
+  height: auto;
+  width: 100%;
+}
+
+.news-info h2 {
+  font-size: 0.426667rem;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: 900;
+}
+
+.news-info p {
+  font-size: 0.266667rem;
+  color: black;
+  margin: 0.2rem 0;
+}
+
+.news-info p span {
+  margin-right: 0.2rem;
+}
+
+.news-info img {
+  width: 100%;
+  height: auto;
+  margin: 0.2rem 0;
+}
+
+.news-content {
+  width: 100%;
+  height: auto;
+  margin-top: 0.266667rem;
+  font-size: 0.4rem;
+  line-height: 1.5;
+  color: #333;
+  padding-bottom: 1.2rem;
+}
+
+.news-content p {
+  margin: 0.133333rem 0;
+}
+
+.info span {
+  font-size: 0.346667rem;
+}
+
+.read {
+  margin-left: 0.8rem;
+}
+
+.collect {
+  margin-left: 0.333333rem;
+}
+
+.download {
+  position: fixed;
+  width: 100%;
+  height: 1.2rem;
+  bottom: 0;
+  background: black;
+  opacity: 0.8;
+  z-index: 1;
+  color: white;
+  line-height: 1.2rem;
+  padding-left: 0.4rem;
+  font-size: 0.346667rem;
+}
+
+.download img {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-top: 0.2rem;
+  background: red;
+  float: left;
+}
+
+.app {
+  float: left;
+  margin-left: 0.266667rem;
+}
+
+.prompt {
+  float: left;
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 0.013333rem solid white;
+  margin-top: 0.133333rem;
+  margin-left: 0.8rem;
+  line-height: 0.333333rem;
+  font-size: 0.293333rem;
+  padding-left: 0.133333rem;
+  padding-top: 0.133333rem;
+}
+
+.icon {
+  width: 4.666667rem;
+  height: 1.2rem;
+  float: right;
+  position: relative;
+}
+
+.icon i {
+  line-height: 1.2rem;
+  margin-left: 0.666667rem;
+  color: grey;
+}
+
+.like:active {
+  color: red;
+}
+
+.num {
+  display: block;
+  position: absolute;
+  width: 0.666667rem;
+  height: 0.266667rem;
+  border-radius: 0.066667rem;
+  background: #f85959;
+  right: 0.466667rem;
+  margin-top: 0.266667rem;
+  color: white;
+  line-height: 0.266667rem;
+  text-align: center;
+  font-size: 0.213333rem;
+}
+
+.icon i.red {
+  color: red;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../../views/font_z0r3y4olsusug14i/iconfont.eot');
+  src: url('../../views/font_z0r3y4olsusug14i/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../../views/font_z0r3y4olsusug14i/iconfont.woff') format('woff'),
+    url('../../views/font_z0r3y4olsusug14i/iconfont.ttf') format('truetype'),
+    url('../../views/font_z0r3y4olsusug14i/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 0.6rem;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.002667rem;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.comment {
+  text-decoration: none;
+}
+
+.icon a:hover {
+  color: white;
+}
+
+.download a {
+  color: white;
+}
